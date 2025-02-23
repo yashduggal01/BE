@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  /* Light gray background for the whole page */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #333;
+  margin: 20px 0;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container for Posts */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Card Styles */
+.post-card {
+  background-color: #ffffff;
+  /* White background for the card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.post-card h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.post-card p {
+  font-size: 1em;
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.post-card a {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.post-card a:hover {
+  background-color: #0056b3;
+}
+
+/* Single Post Page Styles */
+.single-post-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  /* Light gray background for the whole page */
+  padding: 20px;
+}
+
+.single-post-card {
+  background-color: #ffffff;
+  /* White background for the card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+.single-post-card h2 {
+  font-size: 2em;
+  margin: 0 0 15px;
+  color: #333;
+}
+
+.single-post-card p {
+  font-size: 1.2em;
+  color: #666;
+  margin: 0 0 20px;
+}
+
+.single-post-card a {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.single-post-card a:hover {
+  background-color: #0056b3;
+}
+
+/* Add Post Form Styles */
+.add-post-form {
+  background-color: #ffffff;
+  /* White background for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.add-post-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.add-post-form input,
+.add-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.add-post-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-post-form button:hover {
+  background-color: #0056b3;
+}
